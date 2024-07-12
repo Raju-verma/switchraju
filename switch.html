@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Numbers</label>
+    <input type="text" id="num"><br><br>
+    <button onclick="check()">Click here</button>
+    <span id="hello"></span>
+    <script>
+        function check(){
+         let a = document.getElementById("num").value;
+         let key=2;
+         let year  = 2023;
+         switch (key){
+               case 1:
+                days=31;
+                console.log("janurary");
+                break;
+               case 3:
+                days=31;
+                console.log("March");
+                break;
+                case 5:
+                days=31;
+                console.log("May");
+                break;
+                case 7:
+                days=31;
+                console.log("july");
+                break;
+                case 8:
+                days=31;
+                console.log("August");
+                break;
+                case 10:
+                days=31;
+                console.log("October");
+                break;
+                case 12:
+                days=31;
+                console.log("December");
+                break;
+                case 4:
+                days=30;
+                console.log("April");
+                case 6:
+                days=30;
+                console.log("June");
+                break;
+                case 9:
+                days=30;
+                console.log("September");
+                break;
+                case 11:
+                days=30;
+                console.log("November");
+                break;
+                case 2:
+               if((year % 4 == 0) &&  (year % 100 !=0)|| (year % 400 ==0)){
+                    console.log("feburary leap year")
+
+                }else{
+                    console.log("not leap year feburary");
+                }
+
+            
+         }
+        }
+    </script>
+    
+
+        
+</body>
+</html>

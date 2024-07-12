@@ -1,0 +1,41 @@
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <body>
+    <label>Number1</label>
+    <input type="text" id="num1"><br><br>
+    <label>Number2</label>
+    <input type="text" id="num2"><br><br>
+    <button onclick="check()">Addition</button>
+    <button onclick="check()">Substraction</button>
+    <button onclick="check()">Multiplication</button>
+    <button onclick="check()">Division</button>
+    <span id="hello"></span>
+    <script>
+        function check(){
+         let a = parseInt(document.getElementById("num1").value);
+         let b = parseInt(document.getElementById("num2").value);
+         let key = 1;
+         switch(key){
+         case 1:
+            console.log(a + b);
+            break;
+         case 2:
+            console.log(a - b);
+            break;
+         case 3:
+            console.log(a * b);
+            break;
+         case 4:
+            console.log(a / b);
+            break;
+         }
+
+        }
+        </script>
+        </body>
+        </html>
